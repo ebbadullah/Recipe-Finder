@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modern Recipe Finder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Recipe Finder</h1>
+            <button class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon"></i>
+            </button>
+        </header>
+
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for a recipe...">
+            <button onclick="searchRecipes()">Search</button>
+        </div>
+
+        <div class="random-recipe">
+            <button onclick="getRandomRecipe()">Get Random Recipe</button>
+        </div>
+
+        <div class="recipe-grid" id="recipeGrid"></div>
+
+        <div class="recipe-details" id="recipeDetails">
+            <div class="recipe-details-content">
+                <img id="detailImage" src="" alt="">
+                <h2 id="detailTitle"></h2>
+                <h3>Ingredients</h3>
+                <ul id="detailIngredients"></ul>
+                <h3>Instructions</h3>
+                <ol id="detailInstructions"></ol>
+                <button onclick="closeDetails()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script  src="./script.js"></script>
+    
+</body>
+</html>
